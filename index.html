@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <title>Tip calculator app</title>
+  </head>
+
+  <body>
+    <header class="title">SPLI<br />TTER</header>
+
+    <main class="card">
+      <div class="entries">
+        <div class="bill">
+          <label>
+            <span class="color-gray">Bill</span>
+            <br />
+            <div>
+              <input
+                type="number"
+                id="bill"
+                name="bill"
+                class="dollarIcon"
+                placeholder="0"
+                min="0"
+              />
+            </div>
+          </label>
+        </div>
+
+        <div class="tip">
+          <span class="color-gray">Select Tip %</span>
+          <div class="buttons">
+            <button value="5" class="unselectedTip">5%</button>
+            <button value="10" class="unselectedTip">10%</button>
+            <button value="15" class="unselectedTip">15%</button>
+            <button value="25" class="unselectedTip">25%</button>
+            <button value="50" class="unselectedTip">50%</button>
+            <input
+              type="number"
+              id="custom"
+              name="custom"
+              placeholder="Custom"
+              min="0"
+              max="100"
+            />
+          </div>
+        </div>
+
+        <div class="people">
+          <label>
+            <div class="people-labels">
+              <span class="color-gray">Number of people</span>
+              <span class="people-error">Can't be zero</span>
+            </div>
+            <input
+              type="number"
+              id="people"
+              name="people"
+              class="personIcon"
+              placeholder="0"
+              min="0"
+            />
+          </label>
+        </div>
+      </div>
+
+      <div class="total">
+        <div>
+          <div class="total-tip">
+            <div>
+              <span>Tip Amount</span> <br />
+              <span class="total-person">/ person</span>
+            </div>
+            <div class="total-amount" id="total-tip">$0.00</div>
+          </div>
+
+          <div class="total-general">
+            <div>
+              <span>Total</span> <br />
+              <span class="total-person">/ person</span>
+            </div>
+            <div class="total-amount" id="total-general">$0.00</div>
+          </div>
+        </div>
+
+        <button id="resetButton">RESET</button>
+      </div>
+    </main>
+
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Juanpa</a>.
+    </footer>
+
+    <script type="module" src="./src/main.ts"></script>
+  </body>
+</html>
