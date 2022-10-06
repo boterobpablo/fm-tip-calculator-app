@@ -13,15 +13,15 @@
   </head>
 
   <body>
-    <header class="title">SPLI<br />TTER</header>
+    <header>
+      <h1 class="title">SPLI<br />TTER</h1>
+    </header>
 
     <main class="card">
       <div class="entries">
         <div class="bill">
-          <label>
-            <span class="color-gray">Bill</span>
+          <label for="bill" class="color-gray">Bill</label>
             <br />
-            <div>
               <input
                 type="number"
                 id="bill"
@@ -30,8 +30,6 @@
                 placeholder="0"
                 min="0"
               />
-            </div>
-          </label>
         </div>
 
         <div class="tip">
@@ -54,11 +52,10 @@
         </div>
 
         <div class="people">
-          <label>
-            <div class="people-labels">
-              <span class="color-gray">Number of people</span>
-              <span class="people-error">Can't be zero</span>
-            </div>
+          <div class="people-labels">
+            <label for="people" class="color-gray">Number of people</label>
+            <span class="people-error">Can't be zero</span>
+          </div>
             <input
               type="number"
               id="people"
@@ -67,7 +64,6 @@
               placeholder="0"
               min="0"
             />
-          </label>
         </div>
       </div>
 
