@@ -70,13 +70,13 @@ input:focus {
 }
 
 .dollarIcon {
-  background: url("../assets/images/icon-dollar.svg") no-repeat;
+  background: url("/assets/images/icon-dollar.svg") no-repeat;
   background-position: 14px 14px;
   background-size: 11px;
   background-color: var(--very-light-grayish-cyan);
 }
 .personIcon {
-  background: url("../assets/images/icon-person.svg") no-repeat;
+  background: url("/assets/images/icon-person.svg") no-repeat;
   background-position: 14px 15px;
   background-size: 12px;
   background-color: var(--very-light-grayish-cyan);
