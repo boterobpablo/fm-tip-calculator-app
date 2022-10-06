@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base href="/fm-tip-calculator-app/">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABO1BMVEUAAAD////////////////////////////////////////////////////////////////////////////////////////////////////////////////l9Pff8fS54ein2eOn2eL9/v684unr9vj7/f7c8PSl2eKHzNil2OLv+Prz+vue1eB3xdOq2uPm9Pf29/vy8/n3/Py13+eEyteZ097P6u/2+/zByeKOm8r8/f7u+Pq+4+qOz9uU0dzo9fjb4O5meLbh5fH0+vvV7fHx+fv8/P2Gk8Wbps+44eim2eLW2+xkdrXO1Oit3OWttthperja3u7u+Pn6+/2hrNJneLfFy+P7+/23v92IlcbN0ufx8/nj5/Kbp9BsfbltfrqAj8ORnsvg5PD+/v/v8ffQ1em0vduqtNfn6vS/61TcAAAAHHRSTlMAAAQqbK3Z8v0DN5ff+xqJ6jbC/kHBAjjp3qz8qSKHsgAAAAFiS0dEAf8CLd4AAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfiChMPAx5FOtlkAAABSUlEQVQ4y4WTZ2OCMBCGc4IMEXAPjB10771t7dLuXbv3/v+/oNigIYjN+4HcJU9CcgMhVxASxLAkK4oshUUhBIgVqBEtqmNXelSLqF4EwDBjmFHMNADoejyRxD4lE/EGAZCScICkFCGc/YHrDkHOACON2yhtOABkTNxWZgYQZHPeqWKH18tlAakas6ezi3E1FQl5Fuhm3LyARD0AsIs9vSSmIrJwC9DXPzA4NEx8C0ktwMjo2PiE3YgFkokxOdUEpmdm5+YXXEBGCjEWl5bpHVZKq2tlMq+gAjHWNza9r9jarpD5QuMX1Z3dv3Fvn72T3LzkweFRfSgd+xJGn3lyeuZ8K+csYNFAXVzWrqr+bDmBoqG+vqnd3t3bDOCE2push8en55fXNzZZTLrfPz6/vn+oX083t2C4JccvWm7Z8xuH33r85v2v/X8Bp/FiyVLnL/0AAAAldEVYdGRhdGU6Y3JlYXRlADIwMTgtMTAtMTlUMTU6MDM6MzArMDI6MDCzEaEaAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE4LTEwLTE5VDE1OjAzOjMwKzAyOjAwwkwZpgAAAFd6VFh0UmF3IHByb2ZpbGUgdHlwZSBpcHRjAAB4nOPyDAhxVigoyk/LzEnlUgADIwsuYwsTIxNLkxQDEyBEgDTDZAMjs1Qgy9jUyMTMxBzEB8uASKBKLgDqFxF08kI1lQAAAABJRU5ErkJggg=="
+    />
+    <title>Tip calculator app</title>
+    <script type="module" crossorigin src="/assets/index.04ad0659.js"></script>
+    <link rel="stylesheet" href="/assets/index.17be2878.css">
+  </head>
+
+  <body>
+    <header class="title">SPLI<br />TTER</header>
+
+    <main class="card">
+      <div class="entries">
+        <div class="bill">
+          <label>
+            <span class="color-gray">Bill</span>
+            <br />
+            <div>
+              <input
+                type="number"
+                id="bill"
+                name="bill"
+                class="dollarIcon"
+                placeholder="0"
+                min="0"
+              />
+            </div>
+          </label>
+        </div>
+
+        <div class="tip">
+          <span class="color-gray">Select Tip %</span>
+          <div class="buttons">
+            <button value="5" class="unselectedTip">5%</button>
+            <button value="10" class="unselectedTip">10%</button>
+            <button value="15" class="unselectedTip">15%</button>
+            <button value="25" class="unselectedTip">25%</button>
+            <button value="50" class="unselectedTip">50%</button>
+            <input
+              type="number"
+              id="custom"
+              name="custom"
+              placeholder="Custom"
+              min="0"
+              max="100"
+            />
+          </div>
+        </div>
+
+        <div class="people">
+          <label>
+            <div class="people-labels">
+              <span class="color-gray">Number of people</span>
+              <span class="people-error">Can't be zero</span>
+            </div>
+            <input
+              type="number"
+              id="people"
+              name="people"
+              class="personIcon"
+              placeholder="0"
+              min="0"
+            />
+          </label>
+        </div>
+      </div>
+
+      <div class="total">
+        <div>
+          <div class="total-tip">
+            <div>
+              <span>Tip Amount</span> <br />
+              <span class="total-person">/ person</span>
+            </div>
+            <div class="total-amount" id="total-tip">$0</div>
+          </div>
+
+          <div class="total-general">
+            <div>
+              <span>Total</span> <br />
+              <span class="total-person">/ person</span>
+            </div>
+            <div class="total-amount" id="total-general">$0</div>
+          </div>
+        </div>
+
+        <button id="resetButton">RESET</button>
+      </div>
+    </main>
+
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Juanpa</a>.
+    </footer>
+
+    
+  </body>
+</html>
