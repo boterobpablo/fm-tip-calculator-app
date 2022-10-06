@@ -95,7 +95,7 @@ input[type="number"] {
 }
 
 #custom{
-  width: 130px;
+  width: 120px;
   margin: 0;
   text-align: center;
 }
@@ -118,14 +118,14 @@ input:invalid{
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 10px;
   margin-top: 10px;
   margin-bottom: 25px;
 }
 
 .buttons button {
   font-size: 24px;
-  width: 130px;
+  width: 120px;
   border: none;
   border-radius: 5px;
   padding: 5px 0;
@@ -211,7 +211,7 @@ input:invalid{
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    max-width: 350px;
+    max-width: 400px;
     padding: 50px 30px;
     gap: 80px;
   }
