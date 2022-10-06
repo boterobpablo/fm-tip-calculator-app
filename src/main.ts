@@ -36,8 +36,8 @@ const total = (bill: number, tip: number, people: number) => {
   ) {
     totalTip = 0;
   }
-  showTotalGeneral!.innerHTML = `$${String(totalGeneral.toFixed(2))}`;
-  showTotalTip!.innerHTML = `$${String(totalTip.toFixed(2))}`;
+  showTotalGeneral!.innerHTML = `$${Number(totalGeneral.toFixed(2)).toLocaleString('en-US')}`;
+  showTotalTip!.innerHTML = `$${Number(totalTip.toFixed(2)).toLocaleString('en-US')}`;
 };
 
 const removeSelectedTip = () => {
@@ -64,8 +64,8 @@ customInput?.addEventListener("change", (e: any) => {
 });
 
 resetButton?.addEventListener("click", () => {
-  showTotalGeneral!.innerHTML = `$0.00`;
-  showTotalTip!.innerHTML = `$0.00`;
+  showTotalGeneral!.innerHTML = `$0`;
+  showTotalTip!.innerHTML = `$0`;
   peopleInput!.value = "";
   billInput!.value = "";
   customInput!.value = "";
